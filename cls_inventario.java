@@ -1,6 +1,5 @@
-
 public class cls_inventario{
-    private String str_isba;
+    private String str_isbn;
     private String str_nombre;
     private String str_autores;
     private int int_stock;
@@ -12,7 +11,7 @@ public class cls_inventario{
     public cls_inventario(String isba, String nombre, String autores, int stock, String fecha_p, String resumen,
     String ubicacion, float valor){
 
-        this.str_isba = isba;
+        this.str_isbn = isba;
         this.str_nombre = nombre;
         this.str_autores = autores;
         this.int_stock = stock;
@@ -29,7 +28,7 @@ public class cls_inventario{
     public void setUbicacion(String ubicacion){this.str_ubicacion = ubicacion;}
 
 
-    public String getIsba(){return this.str_isba;}
+    public String getIsba(){return this.str_isbn;}
     public String getNombre(){return this.str_nombre;}
     public String getAutores(){return this.str_autores;}
     public int getStock(){return this.int_stock;}

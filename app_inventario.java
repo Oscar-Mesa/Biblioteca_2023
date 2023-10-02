@@ -10,9 +10,17 @@ public class app_inventario {
     }
 
 
+    private static void fnt_consultar_libros(){
+        String isbn = JOptionPane.showInputDialog(null,"Ingrese el ISBA del libro: ");
+        if (isbn == null){
+            jop
+        }
+
+    }
+
     private static void fnt_registrar_libros(){
 
-        String isba = JOptionPane.showInputDialog(null,"ISBA");
+        String isbn = JOptionPane.showInputDialog(null,"ISBA");
         String nombre = JOptionPane.showInputDialog(null,"Nombre");
         String autores = JOptionPane.showInputDialog(null,"Autores");
         int stock = Integer.parseInt(JOptionPane.showInputDialog(null,"Stock"));  
@@ -21,7 +29,7 @@ public class app_inventario {
         String ubicacion = JOptionPane.showInputDialog(null,"Ubicación");
         float valor = Float.parseFloat(JOptionPane.showInputDialog(null,"Valor"));
 
-        inventario[int_posiciones] = new cls_inventario(isba, nombre, autores, stock, fecha_p, resumen, ubicacion, valor);
+        inventario[int_posiciones] = new cls_inventario(isbn, nombre, autores, stock, fecha_p, resumen, ubicacion, valor);
         int_posiciones += 1;
         JOptionPane.showMessageDialog(null, "Registrado con éxito",
         "Registrar",JOptionPane.INFORMATION_MESSAGE);
